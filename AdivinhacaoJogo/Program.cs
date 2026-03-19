@@ -12,19 +12,42 @@ Iremos fazer um jogo onde o usuário terá chances de acertar um número aleató
 */
 // 1. Nosso jogo deve aceitar o input do jogador e exibir o valor digitado
 // 2. Nosso jogo deve gerar um número secreto aleatório
+// 3. Nosso jogo deve validar a tentativa do jogador e exibir uma mensagem de feedback
+// 4. Nosso jogo deve permitir multiplas tentativas de adivinhação
 
-Console.Clear();
+//Console.Clear();
 
 Console.WriteLine("---------------------------------------");
 Console.WriteLine("##        Jogo de Adivinhação        ##");
 Console.WriteLine("---------------------------------------");
-Console.Write ("\nDigite um número: ");
+
+
+Console.Write ("\n## Digite um número: ");
 string strNumDigitado = Console.ReadLine();
+int numDigitado = Convert.ToInt32(strNumDigitado);
 
 
 //int numAleatorio = RandomNumberGenerator.GetInt32(NumeroMinimo, NumeroMaximo);
 int numAleatorio = RandomNumberGenerator.GetInt32(1, 20);
+//Console.WriteLine(numAleatorio);
+
 
 Console.WriteLine($"O número digitado foi: {strNumDigitado}");
-Console.WriteLine($"O número aleatorio foi: {numAleatorio}");
+
+
+if (numAleatorio == numDigitado)
+{
+    Console.WriteLine($"Parebéns, o número era realmente o {numAleatorio}");
+
+} else if (numAleatorio > numDigitado)
+{
+    Console.WriteLine($"O número aleatorio é maior que o número digitado.");
+    
+}
+else
+{
+    Console.WriteLine($"O número digitado é menor que o número digitado.");
+    
+}
+
 Console.ReadLine();
