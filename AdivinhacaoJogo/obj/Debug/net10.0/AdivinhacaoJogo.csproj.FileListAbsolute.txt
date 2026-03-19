@@ -1,0 +1,14 @@
+D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\bin\Debug\net10.0\AdivinhacaoJogo.exe
+D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\bin\Debug\net10.0\AdivinhacaoJogo.deps.json
+D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\bin\Debug\net10.0\AdivinhacaoJogo.runtimeconfig.json
+D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\bin\Debug\net10.0\AdivinhacaoJogo.dll
+D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\bin\Debug\net10.0\AdivinhacaoJogo.pdb
+D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.GeneratedMSBuildEditorConfig.editorconfig
+D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.AssemblyInfoInputs.cache
+D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.AssemblyInfo.cs
+D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.csproj.CoreCompileInputs.cache
+D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.dll
+D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\obj\Debug\net10.0\refint\AdivinhacaoJogo.dll
+D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.pdb
+D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.genruntimeconfig.cache
+D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\obj\Debug\net10.0\ref\AdivinhacaoJogo.dll
