@@ -12,3 +12,4 @@ D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\obj\Debug\net10.0\refint
 D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.pdb
 D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.genruntimeconfig.cache
 D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\obj\Debug\net10.0\ref\AdivinhacaoJogo.dll
+D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.sourcelink.json
