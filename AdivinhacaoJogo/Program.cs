@@ -16,46 +16,112 @@ Iremos fazer um jogo onde o usuário terá chances de acertar um número aleató
 // 4. Nosso jogo deve permitir multiplas tentativas de adivinhação
 
 //int numAleatorio = RandomNumberGenerator.GetInt32(NumeroMinimo, NumeroMaximo);
-int numAleatorio = RandomNumberGenerator.GetInt32(1, 20);
-//Console.WriteLine(numAleatorio);
+int numAleatorioNivel1 = RandomNumberGenerator.GetInt32(1, 40);
+int numAleatorioNivel2 = RandomNumberGenerator.GetInt32(1, 30);
+int numAleatorioNivel3 = RandomNumberGenerator.GetInt32(1, 10);
+//Console.WriteLine(numAleatorioNivel1);
 
 bool jogoDeveContinuar = true;
+
+    Console.Clear();
+
+    Console.WriteLine("----------------------------------------");
+    Console.WriteLine("##         Jogo de Adivinhação        ##");
+    Console.WriteLine("----------------------------------------");
+    Console.WriteLine("-- Digite sempre algum número inteiro --\n");
+
+    Console.WriteLine("Qual nível de jogo, vamos jogar? ");
+    Console.WriteLine("1 -> Nível 1 || 1 à 40 números");
+    Console.WriteLine("2 -> Nível 2 || 1 à 20 números");
+    Console.WriteLine("3 -> Nível 3 || 1 à 10 números");
+    Console.Write("=> ");
+    string strNivelDigitado = Console.ReadLine();
+    int nivelDigitado = Convert.ToInt32(strNivelDigitado);
+
+    if (strNivelDigitado != "1" && strNivelDigitado != "2" && strNivelDigitado != "3")
+    {
+        Console.WriteLine("Número digitado não corresponde a nenhum nível...");
+        return;
+    }
 
 while (jogoDeveContinuar)
 {
     Console.Clear();
-
-    Console.WriteLine("---------------------------------------");
-    Console.WriteLine("##        Jogo de Adivinhação        ##");
-    Console.WriteLine("---------------------------------------");
-    Console.WriteLine("---- Digite algum número de 1 à 20 ----");
-
+    Console.WriteLine("----------------------------------------");
+    Console.WriteLine("##         Jogo de Adivinhação        ##");
+    Console.WriteLine("----------------------------------------");
+    Console.WriteLine("-- Digite sempre algum número inteiro --\n");
 
     Console.Write ("\n## Digite um número: ");
     string strNumDigitado = Console.ReadLine();
     int numDigitado = Convert.ToInt32(strNumDigitado);
 
-    Console.WriteLine($"O número digitado foi: {strNumDigitado}");
+    //Console.WriteLine($"O número digitado foi: {strNumDigitado}");
 
-
-    if (numAleatorio == numDigitado)
+    if (nivelDigitado == 1)
     {
-        Console.WriteLine($"Parebéns, o número era realmente o {numAleatorio}");
+        if (numAleatorioNivel1 == numDigitado)
+        {
+            Console.WriteLine($"Parebéns, o número era realmente o {numAleatorioNivel1}");
+            Console.WriteLine("Até mais... saindo do nosso jogo.\n");
+            return;
 
-    } else if (numAleatorio > numDigitado)
+
+        }
+        else if (numAleatorioNivel1 > numDigitado)
+        {
+            Console.WriteLine($"O número aleatorio é maior que o número digitado.");
+
+        }
+        else
+        {
+            Console.WriteLine($"O número digitado é menor que o número digitado.");
+
+        }
+    } else if (nivelDigitado == 2)
     {
-        Console.WriteLine($"O número aleatorio é maior que o número digitado.");
-        
+        if (numAleatorioNivel2 == numDigitado)
+        {
+            Console.WriteLine($"Parebéns, o número era realmente o {numAleatorioNivel2}");
+            Console.WriteLine("Até mais... saindo do nosso jogo.\n");
+            return;
+
+
+        }
+        else if (numAleatorioNivel2 > numDigitado)
+        {
+            Console.WriteLine($"O número aleatorio é maior que o número digitado.");
+
+        }
+        else
+        {
+            Console.WriteLine($"O número digitado é menor que o número digitado.");
+
+        }
+    }else 
+    {
+        if (numAleatorioNivel3 == numDigitado)
+        {
+            Console.WriteLine($"Parebéns, o número era realmente o {numAleatorioNivel3}");
+            Console.WriteLine("Até mais... saindo do nosso jogo.\n");
+            return;
+
+
+        }
+        else if (numAleatorioNivel3 > numDigitado)
+        {
+            Console.WriteLine($"O número aleatorio é maior que o número digitado.");
+
+        }
+        else
+        {
+            Console.WriteLine($"O número digitado é menor que o número digitado.");
+
+        }
     }
-    else
-    {
-        Console.WriteLine($"O número digitado é menor que o número digitado.");
-        
-    }
-
 
     Console.WriteLine();
-    Console.Write("Deseja continuar? (s/N): ");
+    Console.Write("=> Deseja continuar? (s/N): ");
     string opcaoContinuar = Console.ReadLine();
 
     if (opcaoContinuar != "S" && opcaoContinuar != "s")
