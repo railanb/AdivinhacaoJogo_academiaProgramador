@@ -16,10 +16,6 @@ Iremos fazer um jogo onde o usuário terá chances de acertar um número aleató
 // 4. Nosso jogo deve permitir multiplas tentativas de adivinhação
 // 5. Adicioncar opção de niveis de jogo
 // 6. Adcionar a opção de contagem
-/* 
-    pelo estudo feito, poderia fazer um laço para, com um IF, depois que o usuario escolher o nivel de jogo
-
-*/
 
 //int numAleatorio = RandomNumberGenerator.GetInt32(NumeroMinimo, NumeroMaximo);
 int numAleatorioNivel1 = RandomNumberGenerator.GetInt32(1, 40);
@@ -48,23 +44,24 @@ if (strNivelDigitado != "1" && strNivelDigitado != "2" && strNivelDigitado != "3
     return;
 }
 
-
-bool jogoDeveContinuar = true;
-
-while (jogoDeveContinuar)
+if (nivelDigitado == 1)
 {
-    //Console.Clear();
-    Console.WriteLine("----------------------------------------");
-    Console.WriteLine("##         Jogo de Adivinhação        ##");
-    Console.WriteLine("----------------------------------------");
-    Console.WriteLine("-- Digite sempre algum número inteiro --\n");
 
-    Console.Write("\n## Digite um número: ");
-    string strNumDigitado = Console.ReadLine();
-    int numDigitado = Convert.ToInt32(strNumDigitado);
-
-    if (nivelDigitado == 1)
+    int contadorNivel1 = 1;
+    int limiteNivel1 = 7;
+    while (contadorNivel1 < limiteNivel1)
     {
+        //Console.Clear();
+        Console.WriteLine("----------------------------------------");
+        Console.WriteLine("##         Jogo de Adivinhação        ##");
+        Console.WriteLine("----------------------------------------");
+        Console.WriteLine("-- Digite sempre algum número inteiro --\n");
+
+        Console.Write($"\n## Tentativa: {contadorNivel1} ");
+        Console.Write("\n## Digite um número: ");
+        string strNumDigitado = Console.ReadLine();
+        int numDigitado = Convert.ToInt32(strNumDigitado);
+
         if (numAleatorioNivel1 == numDigitado)
         {
             Console.WriteLine($"Parebéns, o número era realmente o {numAleatorioNivel1}");
@@ -83,9 +80,43 @@ while (jogoDeveContinuar)
             Console.WriteLine($"O número digitado é menor que o número digitado.");
 
         }
+
+        Console.WriteLine();
+        Console.Write("=> Deseja continuar? (s/N): ");
+        string opcaoContinuar = Console.ReadLine();
+
+        if (opcaoContinuar == "S" || opcaoContinuar == "s")
+        {
+            contadorNivel1++;
+            if (contadorNivel1 >= limiteNivel1)
+            {
+                Console.WriteLine("## GAME OVER...Número de tentativas atingido. ##\n");
+                return;
+            }
+        }else
+        {
+            Console.WriteLine("Até mais... Saindo do jogo.");
+            return;
+        }
     }
-    else if (nivelDigitado == 2)
+}
+else if (nivelDigitado == 2)
+{
+    int contadorNivel2 = 1;
+    int limiteNivel2 = 5;
+    while (contadorNivel2 < limiteNivel2)
     {
+        //Console.Clear();
+        Console.WriteLine("----------------------------------------");
+        Console.WriteLine("##         Jogo de Adivinhação        ##");
+        Console.WriteLine("----------------------------------------");
+        Console.WriteLine("-- Digite sempre algum número inteiro --\n");
+
+        Console.Write($"\n## Tentativa: {contadorNivel2} ");
+        Console.Write("\n## Digite um número: ");
+        string strNumDigitado = Console.ReadLine();
+        int numDigitado = Convert.ToInt32(strNumDigitado);
+
         if (numAleatorioNivel2 == numDigitado)
         {
             Console.WriteLine($"Parebéns, o número era realmente o {numAleatorioNivel2}");
@@ -104,9 +135,45 @@ while (jogoDeveContinuar)
             Console.WriteLine($"O número digitado é menor que o número digitado.");
 
         }
+
+
+        Console.WriteLine();
+        Console.Write("=> Deseja continuar? (s/N): ");
+        string opcaoContinuar = Console.ReadLine();
+
+        if (opcaoContinuar == "S" || opcaoContinuar == "s")
+        {
+            contadorNivel2++;
+            if (contadorNivel2 >= limiteNivel2)
+            {
+                Console.WriteLine("## GAME OVER...Número de tentativas atingido. ##\n");
+                return;
+            }
+        }
+        else
+        {
+            Console.WriteLine("Até mais... Saindo do jogo.");
+            return;
+        }
     }
-    else
+} else
+{
+    int contadorNivel3 = 1;
+    int limiteNivel3 = 3;
+    while (contadorNivel3 < limiteNivel3)
     {
+        //Console.Clear();
+        Console.WriteLine("----------------------------------------");
+        Console.WriteLine("##         Jogo de Adivinhação        ##");
+        Console.WriteLine("----------------------------------------");
+        Console.WriteLine("-- Digite sempre algum número inteiro --\n");
+
+        Console.Write($"\n## Tentativa: {contadorNivel3} ");
+        Console.Write("\n## Digite um número: ");
+        string strNumDigitado = Console.ReadLine();
+        int numDigitado = Convert.ToInt32(strNumDigitado);
+
+
         if (numAleatorioNivel3 == numDigitado)
         {
             Console.WriteLine($"Parebéns, o número era realmente o {numAleatorioNivel3}");
@@ -125,14 +192,25 @@ while (jogoDeveContinuar)
             Console.WriteLine($"O número digitado é menor que o número digitado.");
 
         }
-    }
 
-    Console.WriteLine();
-    Console.Write("=> Deseja continuar? (s/N): ");
-    string opcaoContinuar = Console.ReadLine();
+        
+        Console.WriteLine();
+        Console.Write("=> Deseja continuar? (s/N): ");
+        string opcaoContinuar = Console.ReadLine();
 
-    if (opcaoContinuar != "S" && opcaoContinuar != "s")
-    {
-        jogoDeveContinuar = false;
+        if (opcaoContinuar == "S" || opcaoContinuar == "s")
+        {
+            contadorNivel3++;
+            if (contadorNivel3 >= limiteNivel3)
+            {
+                Console.WriteLine("## GAME OVER...Número de tentativas atingido. ##\n");
+                return;
+            }
+        }
+        else
+        {
+            Console.WriteLine("Até mais... Saindo do jogo.");
+            return;
+        }
     }
 }

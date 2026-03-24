@@ -13,3 +13,18 @@ D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\obj\Debug\net10.0\Adivin
 D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.genruntimeconfig.cache
 D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\obj\Debug\net10.0\ref\AdivinhacaoJogo.dll
 D:\ACADEMIA_PROGRAMADOR\AdivinhacaoJogo\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.sourcelink.json
+D:\RAILAN BRANDAO\ACAD PROG\AdivinhacaoJogo_academiaProgramador\AdivinhacaoJogo\bin\Debug\net10.0\AdivinhacaoJogo.exe
+D:\RAILAN BRANDAO\ACAD PROG\AdivinhacaoJogo_academiaProgramador\AdivinhacaoJogo\bin\Debug\net10.0\AdivinhacaoJogo.deps.json
+D:\RAILAN BRANDAO\ACAD PROG\AdivinhacaoJogo_academiaProgramador\AdivinhacaoJogo\bin\Debug\net10.0\AdivinhacaoJogo.runtimeconfig.json
+D:\RAILAN BRANDAO\ACAD PROG\AdivinhacaoJogo_academiaProgramador\AdivinhacaoJogo\bin\Debug\net10.0\AdivinhacaoJogo.dll
+D:\RAILAN BRANDAO\ACAD PROG\AdivinhacaoJogo_academiaProgramador\AdivinhacaoJogo\bin\Debug\net10.0\AdivinhacaoJogo.pdb
+D:\RAILAN BRANDAO\ACAD PROG\AdivinhacaoJogo_academiaProgramador\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.GeneratedMSBuildEditorConfig.editorconfig
+D:\RAILAN BRANDAO\ACAD PROG\AdivinhacaoJogo_academiaProgramador\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.AssemblyInfoInputs.cache
+D:\RAILAN BRANDAO\ACAD PROG\AdivinhacaoJogo_academiaProgramador\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.AssemblyInfo.cs
+D:\RAILAN BRANDAO\ACAD PROG\AdivinhacaoJogo_academiaProgramador\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.csproj.CoreCompileInputs.cache
+D:\RAILAN BRANDAO\ACAD PROG\AdivinhacaoJogo_academiaProgramador\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.sourcelink.json
+D:\RAILAN BRANDAO\ACAD PROG\AdivinhacaoJogo_academiaProgramador\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.dll
+D:\RAILAN BRANDAO\ACAD PROG\AdivinhacaoJogo_academiaProgramador\AdivinhacaoJogo\obj\Debug\net10.0\refint\AdivinhacaoJogo.dll
+D:\RAILAN BRANDAO\ACAD PROG\AdivinhacaoJogo_academiaProgramador\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.pdb
+D:\RAILAN BRANDAO\ACAD PROG\AdivinhacaoJogo_academiaProgramador\AdivinhacaoJogo\obj\Debug\net10.0\AdivinhacaoJogo.genruntimeconfig.cache
+D:\RAILAN BRANDAO\ACAD PROG\AdivinhacaoJogo_academiaProgramador\AdivinhacaoJogo\obj\Debug\net10.0\ref\AdivinhacaoJogo.dll
