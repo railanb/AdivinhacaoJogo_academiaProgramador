@@ -14,14 +14,18 @@ Iremos fazer um jogo onde o usuário terá chances de acertar um número aleató
 // 2. Nosso jogo deve gerar um número secreto aleatório
 // 3. Nosso jogo deve validar a tentativa do jogador e exibir uma mensagem de feedback
 // 4. Nosso jogo deve permitir multiplas tentativas de adivinhação
+// 5. Adicioncar opção de niveis de jogo
+// 6. Adcionar a opção de contagem
+/* 
+    pelo estudo feito, poderia fazer um laço para, com um IF, depois que o usuario escolher o nivel de jogo
+
+*/
 
 //int numAleatorio = RandomNumberGenerator.GetInt32(NumeroMinimo, NumeroMaximo);
 int numAleatorioNivel1 = RandomNumberGenerator.GetInt32(1, 40);
 int numAleatorioNivel2 = RandomNumberGenerator.GetInt32(1, 30);
 int numAleatorioNivel3 = RandomNumberGenerator.GetInt32(1, 10);
 //Console.WriteLine(numAleatorioNivel1);
-
-bool jogoDeveContinuar = true;
 
 Console.Clear();
 
@@ -44,9 +48,12 @@ if (strNivelDigitado != "1" && strNivelDigitado != "2" && strNivelDigitado != "3
     return;
 }
 
+
+bool jogoDeveContinuar = true;
+
 while (jogoDeveContinuar)
 {
-    Console.Clear();
+    //Console.Clear();
     Console.WriteLine("----------------------------------------");
     Console.WriteLine("##         Jogo de Adivinhação        ##");
     Console.WriteLine("----------------------------------------");
@@ -55,8 +62,6 @@ while (jogoDeveContinuar)
     Console.Write("\n## Digite um número: ");
     string strNumDigitado = Console.ReadLine();
     int numDigitado = Convert.ToInt32(strNumDigitado);
-
-    //Console.WriteLine($"O número digitado foi: {strNumDigitado}");
 
     if (nivelDigitado == 1)
     {

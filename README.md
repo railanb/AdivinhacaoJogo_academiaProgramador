@@ -2,7 +2,7 @@
 
 Projeto desenvolvido durante curso da [ACADEMIA DO PROGRAMADOR](https://www.academiadoprogramador.net/inicio) 2026
 
-![Giff do programa](/giff/apresentacao.gif)
+![Foto do programa](/docs/apresentacao.png)
 
 ## Introdução
 Esse projeto foi desenvolvido usando a linguagem C#, uma aplicação de console simples, trata-se de um simples jogo de adivinhações, você passa 1 número ao jogo e ele devolve se você acertou ou não, para facilitar, caso você erre o número o programa le informa uma dica se o número sorteado é maior ou menor. Neste jogo, você pode jogar quantas vezes você quiser, até acertar.
