@@ -23,26 +23,26 @@ int numAleatorioNivel3 = RandomNumberGenerator.GetInt32(1, 10);
 
 bool jogoDeveContinuar = true;
 
-    Console.Clear();
+Console.Clear();
 
-    Console.WriteLine("----------------------------------------");
-    Console.WriteLine("##         Jogo de Adivinhação        ##");
-    Console.WriteLine("----------------------------------------");
-    Console.WriteLine("-- Digite sempre algum número inteiro --\n");
+Console.WriteLine("----------------------------------------");
+Console.WriteLine("##         Jogo de Adivinhação        ##");
+Console.WriteLine("----------------------------------------");
+Console.WriteLine("-- Digite sempre algum número inteiro --\n");
 
-    Console.WriteLine("Qual nível de jogo, vamos jogar? ");
-    Console.WriteLine("1 -> Nível 1 || 1 à 40 números");
-    Console.WriteLine("2 -> Nível 2 || 1 à 20 números");
-    Console.WriteLine("3 -> Nível 3 || 1 à 10 números");
-    Console.Write("=> ");
-    string strNivelDigitado = Console.ReadLine();
-    int nivelDigitado = Convert.ToInt32(strNivelDigitado);
+Console.WriteLine("Qual nível de jogo, vamos jogar? ");
+Console.WriteLine("1 -> Nível 1 || 1 à 40 números");
+Console.WriteLine("2 -> Nível 2 || 1 à 20 números");
+Console.WriteLine("3 -> Nível 3 || 1 à 10 números");
+Console.Write("=> ");
+string strNivelDigitado = Console.ReadLine();
+int nivelDigitado = Convert.ToInt32(strNivelDigitado);
 
-    if (strNivelDigitado != "1" && strNivelDigitado != "2" && strNivelDigitado != "3")
-    {
-        Console.WriteLine("Número digitado não corresponde a nenhum nível...");
-        return;
-    }
+if (strNivelDigitado != "1" && strNivelDigitado != "2" && strNivelDigitado != "3")
+{
+    Console.WriteLine("Número digitado não corresponde a nenhum nível...");
+    return;
+}
 
 while (jogoDeveContinuar)
 {
