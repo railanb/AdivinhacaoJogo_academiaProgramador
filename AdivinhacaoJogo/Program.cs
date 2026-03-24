@@ -31,9 +31,9 @@ Console.WriteLine("----------------------------------------");
 Console.WriteLine("-- Digite sempre algum número inteiro --\n");
 
 Console.WriteLine("Qual nível de jogo, vamos jogar? ");
-Console.WriteLine("1 -> Nível 1 || 1 à 40 números");
-Console.WriteLine("2 -> Nível 2 || 1 à 20 números");
-Console.WriteLine("3 -> Nível 3 || 1 à 10 números");
+Console.WriteLine("1 -> Nível 1 || 8 tentativas e 40 números");
+Console.WriteLine("2 -> Nível 2 || 5 tentativas e 20 números");
+Console.WriteLine("3 -> Nível 3 || 3 tentativas e 10 números");
 Console.Write("=> ");
 string strNivelDigitado = Console.ReadLine();
 int nivelDigitado = Convert.ToInt32(strNivelDigitado);
@@ -48,16 +48,17 @@ if (nivelDigitado == 1)
 {
 
     int contadorNivel1 = 1;
-    int limiteNivel1 = 7;
+    int limiteNivel1 = 9;
     while (contadorNivel1 < limiteNivel1)
     {
-        //Console.Clear();
+        Console.Clear();
         Console.WriteLine("----------------------------------------");
         Console.WriteLine("##         Jogo de Adivinhação        ##");
         Console.WriteLine("----------------------------------------");
         Console.WriteLine("-- Digite sempre algum número inteiro --\n");
 
-        Console.Write($"\n## Tentativa: {contadorNivel1} ");
+        int tentativasRestantes = limiteNivel1 - contadorNivel1;
+        Console.Write($"\n## Faltam {tentativasRestantes} tentativa(s) ");
         Console.Write("\n## Digite um número: ");
         string strNumDigitado = Console.ReadLine();
         int numDigitado = Convert.ToInt32(strNumDigitado);
@@ -65,7 +66,7 @@ if (nivelDigitado == 1)
         if (numAleatorioNivel1 == numDigitado)
         {
             Console.WriteLine($"Parebéns, o número era realmente o {numAleatorioNivel1}");
-            Console.WriteLine("Até mais... saindo do nosso jogo.\n");
+            Console.WriteLine("\nAté mais... saindo do nosso jogo.\n");
             return;
 
 
@@ -90,12 +91,12 @@ if (nivelDigitado == 1)
             contadorNivel1++;
             if (contadorNivel1 >= limiteNivel1)
             {
-                Console.WriteLine("## GAME OVER...Número de tentativas atingido. ##\n");
+                Console.WriteLine("\n## GAME OVER...Número de tentativas atingido. ##\n");
                 return;
             }
         }else
         {
-            Console.WriteLine("Até mais... Saindo do jogo.");
+            Console.WriteLine("\nAté mais... Saindo do jogo.");
             return;
         }
     }
@@ -103,16 +104,17 @@ if (nivelDigitado == 1)
 else if (nivelDigitado == 2)
 {
     int contadorNivel2 = 1;
-    int limiteNivel2 = 5;
+    int limiteNivel2 = 6;
     while (contadorNivel2 < limiteNivel2)
     {
-        //Console.Clear();
+        Console.Clear();
         Console.WriteLine("----------------------------------------");
         Console.WriteLine("##         Jogo de Adivinhação        ##");
         Console.WriteLine("----------------------------------------");
         Console.WriteLine("-- Digite sempre algum número inteiro --\n");
 
-        Console.Write($"\n## Tentativa: {contadorNivel2} ");
+        int tentativasRestantes = limiteNivel2 - contadorNivel2;
+        Console.Write($"\n## Faltam {tentativasRestantes} tentativa(s) ");
         Console.Write("\n## Digite um número: ");
         string strNumDigitado = Console.ReadLine();
         int numDigitado = Convert.ToInt32(strNumDigitado);
@@ -146,29 +148,30 @@ else if (nivelDigitado == 2)
             contadorNivel2++;
             if (contadorNivel2 >= limiteNivel2)
             {
-                Console.WriteLine("## GAME OVER...Número de tentativas atingido. ##\n");
+                Console.WriteLine("\n## GAME OVER...Número de tentativas atingido. ##\n");
                 return;
             }
         }
         else
         {
-            Console.WriteLine("Até mais... Saindo do jogo.");
+            Console.WriteLine("\nAté mais... Saindo do jogo.");
             return;
         }
     }
 } else
 {
     int contadorNivel3 = 1;
-    int limiteNivel3 = 3;
+    int limiteNivel3 = 4;
     while (contadorNivel3 < limiteNivel3)
     {
-        //Console.Clear();
+        Console.Clear();
         Console.WriteLine("----------------------------------------");
         Console.WriteLine("##         Jogo de Adivinhação        ##");
         Console.WriteLine("----------------------------------------");
         Console.WriteLine("-- Digite sempre algum número inteiro --\n");
 
-        Console.Write($"\n## Tentativa: {contadorNivel3} ");
+        int tentativasRestantes = limiteNivel3 - contadorNivel3;
+        Console.Write($"\n## Faltam {tentativasRestantes} tentativa(s) ");
         Console.Write("\n## Digite um número: ");
         string strNumDigitado = Console.ReadLine();
         int numDigitado = Convert.ToInt32(strNumDigitado);
@@ -203,13 +206,13 @@ else if (nivelDigitado == 2)
             contadorNivel3++;
             if (contadorNivel3 >= limiteNivel3)
             {
-                Console.WriteLine("## GAME OVER...Número de tentativas atingido. ##\n");
+                Console.WriteLine("\n## GAME OVER...Número de tentativas atingido. ##\n");
                 return;
             }
         }
         else
         {
-            Console.WriteLine("Até mais... Saindo do jogo.");
+            Console.WriteLine("\nAté mais... Saindo do jogo.");
             return;
         }
     }
