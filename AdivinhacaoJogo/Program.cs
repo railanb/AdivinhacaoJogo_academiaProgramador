@@ -52,7 +52,7 @@ while (jogoDeveContinuar)
     Console.WriteLine("----------------------------------------");
     Console.WriteLine("-- Digite sempre algum número inteiro --\n");
 
-    Console.Write ("\n## Digite um número: ");
+    Console.Write("\n## Digite um número: ");
     string strNumDigitado = Console.ReadLine();
     int numDigitado = Convert.ToInt32(strNumDigitado);
 
@@ -78,7 +78,8 @@ while (jogoDeveContinuar)
             Console.WriteLine($"O número digitado é menor que o número digitado.");
 
         }
-    } else if (nivelDigitado == 2)
+    }
+    else if (nivelDigitado == 2)
     {
         if (numAleatorioNivel2 == numDigitado)
         {
@@ -98,7 +99,8 @@ while (jogoDeveContinuar)
             Console.WriteLine($"O número digitado é menor que o número digitado.");
 
         }
-    }else 
+    }
+    else
     {
         if (numAleatorioNivel3 == numDigitado)
         {
