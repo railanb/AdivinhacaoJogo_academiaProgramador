@@ -19,7 +19,7 @@ Iremos fazer um jogo onde o usuário terá chances de acertar um número aleató
 
 //int numAleatorio = RandomNumberGenerator.GetInt32(NumeroMinimo, NumeroMaximo);
 int numAleatorioNivel1 = RandomNumberGenerator.GetInt32(1, 40);
-int numAleatorioNivel2 = RandomNumberGenerator.GetInt32(1, 30);
+int numAleatorioNivel2 = RandomNumberGenerator.GetInt32(1, 20);
 int numAleatorioNivel3 = RandomNumberGenerator.GetInt32(1, 10);
 //Console.WriteLine(numAleatorioNivel1);
 
@@ -38,15 +38,18 @@ Console.Write("=> ");
 string strNivelDigitado = Console.ReadLine();
 int nivelDigitado = Convert.ToInt32(strNivelDigitado);
 
+// validação para os niveis escolhidos
 if (strNivelDigitado != "1" && strNivelDigitado != "2" && strNivelDigitado != "3")
 {
     Console.WriteLine("Número digitado não corresponde a nenhum nível...");
     return;
 }
 
+// if com a validação do numero digitado
 if (nivelDigitado == 1)
 {
 
+    // iniciando o loop, com contadores para repetição
     int contadorNivel1 = 1;
     int limiteNivel1 = 9;
     while (contadorNivel1 < limiteNivel1)
@@ -57,6 +60,7 @@ if (nivelDigitado == 1)
         Console.WriteLine("----------------------------------------");
         Console.WriteLine("-- Digite sempre algum número inteiro --\n");
 
+        // contagem simples para calcular as tentativas faltantes
         int tentativasRestantes = limiteNivel1 - contadorNivel1;
         Console.Write($"\n## Faltam {tentativasRestantes} tentativa(s) ");
         Console.Write("\n## Digite um número: ");
@@ -88,6 +92,7 @@ if (nivelDigitado == 1)
 
         if (opcaoContinuar == "S" || opcaoContinuar == "s")
         {
+            //incrementando o contador e validando se não atingiu o maximo permitido
             contadorNivel1++;
             if (contadorNivel1 >= limiteNivel1)
             {
