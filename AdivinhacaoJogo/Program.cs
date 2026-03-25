@@ -18,9 +18,9 @@ Iremos fazer um jogo onde o usuário terá chances de acertar um número aleató
 // 6. Adcionar a opção de contagem
 
 //int numAleatorio = RandomNumberGenerator.GetInt32(NumeroMinimo, NumeroMaximo);
-int numAleatorioNivel1 = RandomNumberGenerator.GetInt32(1, 40);
-int numAleatorioNivel2 = RandomNumberGenerator.GetInt32(1, 20);
-int numAleatorioNivel3 = RandomNumberGenerator.GetInt32(1, 10);
+int numAleatorioNivel1 = RandomNumberGenerator.GetInt32(1, 100);
+int numAleatorioNivel2 = RandomNumberGenerator.GetInt32(1, 50);
+int numAleatorioNivel3 = RandomNumberGenerator.GetInt32(1, 20);
 //Console.WriteLine(numAleatorioNivel1);
 
 Console.Clear();
@@ -31,9 +31,9 @@ Console.WriteLine("----------------------------------------");
 Console.WriteLine("-- Digite sempre algum número inteiro --\n");
 
 Console.WriteLine("Qual nível de jogo, vamos jogar? ");
-Console.WriteLine("1 -> Nível 1 || 8 tentativas e 40 números");
-Console.WriteLine("2 -> Nível 2 || 5 tentativas e 20 números");
-Console.WriteLine("3 -> Nível 3 || 3 tentativas e 10 números");
+Console.WriteLine("1 -> Díficil || 03 tentativas e 100 números");
+Console.WriteLine("2 -> Médio   || 05 tentativas e 50  números");
+Console.WriteLine("3 -> Fácil   || 10 tentativas e 20  números");
 Console.Write("=> ");
 string strNivelDigitado = Console.ReadLine();
 int nivelDigitado = Convert.ToInt32(strNivelDigitado);
@@ -51,7 +51,7 @@ if (nivelDigitado == 1)
 
     // iniciando o loop, com contadores para repetição
     int contadorNivel1 = 1;
-    int limiteNivel1 = 9;
+    int limiteNivel1 = 4;
     while (contadorNivel1 < limiteNivel1)
     {
         Console.Clear();
@@ -166,7 +166,7 @@ else if (nivelDigitado == 2)
 } else
 {
     int contadorNivel3 = 1;
-    int limiteNivel3 = 4;
+    int limiteNivel3 = 11;
     while (contadorNivel3 < limiteNivel3)
     {
         Console.Clear();
