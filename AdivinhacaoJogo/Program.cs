@@ -16,6 +16,29 @@ Iremos fazer um jogo onde o usuário terá chances de acertar um número aleató
 // 4. Nosso jogo deve permitir multiplas tentativas de adivinhação
 // 5. Adicioncar opção de niveis de jogo
 // 6. Adcionar a opção de contagem
+/*
+V2
+2. Implemente uma funcionalidade de Validação de Números Repetidos
+
+    O jogador deve ser informado caso o número que está tentando adivinhar já tenha sido informado anteriormente na mesma rodada.
+
+3. Implemente uma funcionalidade de Pontuação, onde:
+
+    O jogador começa com uma pontuação máxima, por exemplo, 1000 pontos.
+    A pontuação é calculada com base na proximidade do palpite em relação ao número secreto.
+    A cada tentativa errada, o jogador perde pontos de acordo com a distância do número secreto:
+    Se a diferença entre o número secreto e o palpite for de 10 ou mais, o jogador perde 100 pontos.
+    Se a diferença for entre 5 e 9, o jogador perde 50 pontos.
+    Se a diferença for entre 1 e 4, o jogador perde 20 pontos.
+    Quando o jogador acerta o número, sua pontuação final é registrada.
+
+Exemplo:
+    1. Número secreto: 50
+    2. Palpite do jogador: 30 → diferença de 20 → o jogador perde 100 pontos (de 1000 para 900).
+    3. Palpite do jogador: 48 → diferença de 2 → o jogador perde 20 pontos (de 900 para 880).
+    4. Palpite do jogador: 50 → acerto → jogo termina com 888 pontos.
+*/
+
 
 //int numAleatorio = RandomNumberGenerator.GetInt32(NumeroMinimo, NumeroMaximo);
 int numAleatorioNivel1 = RandomNumberGenerator.GetInt32(1, 100);
