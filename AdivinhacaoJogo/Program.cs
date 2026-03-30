@@ -101,7 +101,7 @@ while (jogoDeveContinuar == true)
         Console.WriteLine("----------------------------------------");
         Console.WriteLine("##         Jogo de Adivinhação        ##");
         Console.WriteLine("----------------------------------------");
-        Console.WriteLine($"## Faltam {tentativaAtual} de {limiteNivel}##");
+        Console.WriteLine($"## Faltam {tentativaAtual} de {limiteNivel}                      ##");
         Console.WriteLine("-----------------------------------------------");
 
         Console.Write("Digite um número: ");
@@ -134,6 +134,7 @@ while (jogoDeveContinuar == true)
             continue;
         }
 
+        // validando se ainda há espaços disponiveis no array
         if (contadorNumerosDigitados < numerosDigitados.Length)
         {
             numerosDigitados[contadorNumerosDigitados] = numDigitado;
@@ -141,6 +142,7 @@ while (jogoDeveContinuar == true)
         }
         else
         {
+            //se tiver cheio o array, "reinicializa o array" e recomeça o array pela possição 0
             numerosDigitados = new int[limiteNivel];
             contadorNumerosDigitados = 0;
 
@@ -162,13 +164,20 @@ while (jogoDeveContinuar == true)
             Console.WriteLine("O número digitado foi menor que o número secreto!");
         }
 
+        // recebendo em variavel o resultado do numero aleatorio e o numero digitado e tirando a diferença
+        /* 
+            usando o metodo Math.Abs para receber o valor absoluto 
+            int a = Math.Abs(-10);   // resultado: 10
+            double c = Math.Abs(-3.14); // resultado: 3.14
+        */
         int diferencaNumerica = Math.Abs(numAleatorio - numDigitado); // 90 - 100 = 10
 
+        // validando a pontuação, com base na difença entre o numero aleatorio e o digitado
         if (diferencaNumerica >= 10)
         {
             pontuacao -= 100;
         }
-        else if (diferencaNumerica >= 5)
+        else if (diferencaNumerica >= 5 && diferencaNumerica < 10)
         {
             pontuacao -= 50;
         }
@@ -180,7 +189,7 @@ while (jogoDeveContinuar == true)
         Console.WriteLine("-----------------------------------------------");
         Console.WriteLine("Sua pontuação é: " + pontuacao);
         Console.WriteLine("-----------------------------------------------");
-        Console.Write("Digite ENTER para continuar...");
+        Console.Write("Clique ENTER para continuar...");
         Console.ReadLine();
     }
 
